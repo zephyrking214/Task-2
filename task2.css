@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+}
+
+.stopwatch-container {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+#time {
+    font-size: 60px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start { background-color: #4caf50; }
+#pause { background-color: #f44336; }
+#reset { background-color: #2196f3; }
+#lap { background-color: #ff9800; }
+
+.buttons button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+#laps {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#laps li {
+    background: rgba(255,255,255,0.1);
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
